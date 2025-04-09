@@ -158,7 +158,6 @@ class GptProductDescriptions extends Module
         if (Tools::getValue('ajax') && Tools::getValue('action') === 'generateDescription') {
             $this->generateDescriptionAjax();
         }
-        parent::postProcess();
     }
 
     public function hookDisplayBackOfficeHeader()
